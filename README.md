@@ -2,12 +2,12 @@
 
 ## What is this?
 
-This is a development project intended to make Blue Prince work on [Archipelago Multiworld Randomizer](https://archipelago.gg)
+This is a development project intended to make Blue Prince work on [Archipelago Multiworld Randomizer](https://archipelago.gg).<br/>
 Nothing is currently working as we are still figuring out how the game works internally.
 
 ## For Developers
 
-If you want to contribute to development, you're welcome to do so. We are collaborating in the [Blue Prince](https://discord.com/channels/731205301247803413/1362478224604397739) thread in the [Archipelago Discord](https://discord.gg/8Z65BR2)
+If you want to contribute to development, you're welcome to do so. We are collaborating in the [Blue Prince](https://discord.com/channels/731205301247803413/1362478224604397739) thread in the [Archipelago Discord](https://discord.gg/8Z65BR2).
 
 Setting up the development environment is fairly simple:
 1. Download and install the latest version of [MelonLoader](https://github.com/LavaGang/MelonLoader), obviously selecting Blue Prince as the game.
