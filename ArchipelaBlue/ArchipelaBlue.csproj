@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <IsPacked>False</IsPacked>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="MelonLoader.MelonGame">
+      <_Parameter1>Dogubomb</_Parameter1>
+      <_Parameter2>BLUE PRINCE</_Parameter2>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="MelonLoader.MelonInfo">
+      <_Parameter1>ArchipelaBlue.ArchipelaBlueMod</_Parameter1>
+      <_Parameter1_TypeName>System.Type</_Parameter1_TypeName>
+      <_Parameter2>ArchipelaBlue</_Parameter2>
+      <_Parameter3>0.0.1</_Parameter3>
+      <_Parameter4>ShadowKitty42</_Parameter4>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Update="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Update="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Update="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Update="System.IO.Compression.FileSystem">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ArchipelaBlue": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\BLUE PRINCE.exe"
+    }
+  }
+}

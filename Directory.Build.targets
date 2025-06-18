@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!--Merges all dlls in the output folder into a single dll-->
+	<Target Name="ILRepack" AfterTargets="Build" Condition="'$(IsPacked)' == 'true'">
+		<ItemGroup>
+			<InputAssemblies Include="$(TargetPath)" />
+			<InputAssemblies
+				  Include="$(LibFolder)\Archipelago.MultiClient.Net.dll;"/>
+		</ItemGroup>
+
+		<ILRepack
+		  TargetPlatformVersion="v4"
+		  TargetKind="SameAsPrimaryAssembly"
+		  InputAssemblies="@(InputAssemblies)"
+		  Wildcards="true"
+		  LibraryPath="$(GameLibsFolder)"
+		  Parallel="true"
+		  OutputFile="$(TargetPath)"/>
+	</Target>
+
+	<!--Copies the mod dll, the two yaml files and everything inside the ModAssets folder to the target mod folder-->
+	<Target Name="CopyModsToDevFolder" AfterTargets="ILRepack">
+
+		<Message Text="Executing CopyDLLs task" Importance="High" />
+
+		<Copy
+		  SourceFiles="$(TargetDir)$(TargetName).dll;"
+		  
+		  DestinationFolder="$(ModFolder)"/>
+
+		<Message Text="Copied build files" Importance="High" />
+
+	</Target>
+
+</Project>
